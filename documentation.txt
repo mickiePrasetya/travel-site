@@ -1,0 +1,5 @@
+// Set URL Origin Git jika mau ganti remote URL
+// ===============================
+1. git remote -v untuk cek pertama kali
+2. git remote set-url origin nama-destinasi.git
+3. git remote -v untuk double check
