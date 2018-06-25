@@ -3,3 +3,11 @@
 1. git remote -v untuk cek pertama kali
 2. git remote set-url origin nama-destinasi.git
 3. git remote -v untuk double check
+
+// Git commit
+1. git status -- check files
+2. git add -A -- ambil semua files
+3. git commit -m "message"
+
+// Git push to server repo
+1. git push origin master
