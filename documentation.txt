@@ -8,6 +8,10 @@
 1. git status -- check files
 2. git add -A -- ambil semua files
 3. git commit -m "message"
+git commit -am "message" -- shorcut add and commit
 
 // Git push to server repo
 1. git push origin master
+
+// GIT branch
+git branch -- check our branch
