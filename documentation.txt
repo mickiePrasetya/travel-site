@@ -5,13 +5,43 @@
 3. git remote -v untuk double check
 
 // Git commit
+// ===============================
 1. git status -- check files
 2. git add -A -- ambil semua files
 3. git commit -m "message"
 git commit -am "message" -- shorcut add and commit
 
 // Git push to server repo
-1. git push origin master
+// ===============================
+1. git push origin master -- push to master branch
 
 // GIT branch
-git branch -- check our branch
+// ===============================
+git branch -- check our branch 
+git reset app/index.html -- cancel add files to staging
+git branch <name-branch> -- git create new branch
+git checkout count-to-ten -- git checkout to count-to-ten branch
+git checkout -b our-feature --> shortcut to make new branch:our-feature and then checkout immediately
+
+// Git merge
+// ===============================
+// Option. 1
+1. git checkout master -- first checkout to master branch
+2. git merge count-to-ten -- merged count-to-ten to master branch
+3. git push origin master -- push to master branch in server
+
+// Option. 2
+1. git checkout master
+2. git merge our-features --no-ff --> no-fast-forward options works to merge commits unto one big-whole-collection-commit
+3. hit escape
+4. :wq
+
+// Git pull
+// ===============================
+git pull origin master
+
+// Delete branch locally
+// ===============================
+1. git branch -- check what branch wil be removed
+2. git branch -d count-to-fifteen -- delete count-to-fifteen branch
+3. git branch -- recheck branch list again
