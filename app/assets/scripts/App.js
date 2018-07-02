@@ -1,0 +1,26 @@
+// const $ = require('jquery');
+// var Person = require('./modules/Person');
+
+// using ES6 import
+// import Person from './modules/Person';
+
+// class Adult extends Person {
+//    payTaxes(){
+//       console.log(this.name + " now owes $0 in taxes.");
+//    }
+// }
+
+// alert("test5678");
+
+// var john = new Person('John Doe', "blue");
+// john.greet();
+
+// var jane = new Adult('Jane Smith', "orange");
+// jane.greet();
+// jane.payTaxes();
+
+// $('h1').css('color','red');
+
+import MobileMenu from './modules/MobileMenu';
+
+var mobileMenu = new MobileMenu();
