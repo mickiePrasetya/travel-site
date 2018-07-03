@@ -946,6 +946,7 @@ a{
       display: block;
       font-size: .8rem;
       background-color: rgba(47,85,114, .5);
+      transition: color 200ms ease-out;
    }
 
 @media (min-width: 800px) {
@@ -955,6 +956,10 @@ a{
          font-size: 1rem;
          background-color: transparent
    }
+
+         .primary-nav a.is-current-link{
+            color: #fabb69;
+         }
    }
 
 /* Do not edit modules/_sprite directly as it is generated automatically by Gulp.
@@ -1073,8 +1078,13 @@ Instead edit gulp/templates/sprite */
 @media (min-width: 800px) {
 
 .site-header{
+      position: fixed;
       background-color: rgba(47,85,114, .3)
 }
+
+      .site-header--dark{
+         background-color: rgba(23, 51, 72, .85);
+      }
    }
 
 @media (min-width: 800px) {
@@ -1094,6 +1104,9 @@ Instead edit gulp/templates/sprite */
               transform: translateX(-50%) scale(.8);
       -webkit-transform-origin: 50% 0%;
               transform-origin: 50% 0%;
+      transition: -webkit-transform 300ms ease-out;
+      transition: transform 300ms ease-out;
+      transition: transform 300ms ease-out, -webkit-transform 300ms ease-out;
    }
 
 @media (min-width: 800px) {
@@ -1103,6 +1116,12 @@ Instead edit gulp/templates/sprite */
          -webkit-transform: translateX(0);
                  transform: translateX(0)
    }
+         
+
+         .site-header--dark .site-header__logo {
+            -webkit-transform: scale(.57);
+                    transform: scale(.57);
+         }
    }
 
 .site-header__logo-graphic{
