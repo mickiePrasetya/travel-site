@@ -19,8 +19,8 @@ class StickyHeader {
    // refresh waypoint when image.lazyload loaded
    // lazyload makes waypoint position outdated, because image loaded on-demand
    refreshWaypoint(){
-      this.lazyImages.load(function() {
-         Waypoint.refreshAll();
+      this.lazyImages.on('load', function() {
+         Waypoint.refreshAll;
       });
    }
 
